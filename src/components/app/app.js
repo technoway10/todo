@@ -44,10 +44,20 @@ export default class App extends Component {
     };
 
     this.setState(({todoData}) => {
-// 041 11.53
+      const newArr = [
+        ...todoData,
+        newItem 
+      ];
+
+      return {
+        todoData: newArr
+      };
+
     });
 
   };
+
+  
 
   render() {
     return (
